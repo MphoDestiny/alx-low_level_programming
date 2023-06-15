@@ -1,14 +1,8 @@
-#include <stdlib.h>
-
-/**
- * main - Entry
- *
- * Description: write function to print a text
- *
- * Return: 1 (NOT SUCCESS)
- */
+#include <unistd.h>
+#include <string.h>
 int main(void)
 {
-    write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	    return (1);
+char n[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, n, strlen(n));
+return (1);
 }
