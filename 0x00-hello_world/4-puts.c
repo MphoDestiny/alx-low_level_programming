@@ -1,5 +1,4 @@
-vi 4-puts.c
-#include <atdio.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
