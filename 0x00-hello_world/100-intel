@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel $CuFILE
+gcc -s -masm=intel $CuFILE
