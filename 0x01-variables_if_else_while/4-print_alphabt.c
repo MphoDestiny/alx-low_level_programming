@@ -1,22 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - prints alpha in lower and upper case
- * Return: Always 0
+ * main - main function
+ *
+ * Return: always 0
  */
 int main(void)
 {
-	char ch;
+	char i;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		putchar(ch);
-
-	for (ch = 'A'; <= 'Z'; ch++)
-		putchar;
-
+	for (i = 'a' ; i <= 'z' ; i++)
+		if (i != 'q' && i != 'e')
+			putchar(i);
 	putchar('\n');
-
-	return (0);
+	
+	return(0);
 }
