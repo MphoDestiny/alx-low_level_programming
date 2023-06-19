@@ -11,15 +11,15 @@ int main(void)
 	int i = '0';
 	int j = '1';
 
-	while (i <= '8')
+	while (i <= '7')
 	{
-		while (j <= '9')
+		while (j <= '8')
 		{
 			if (!(i > j) || i == j)
 			{
 				putchar(i);
 				putchar(j);
-				if (i == '8' && j == '9')
+				if (i == '7' && j == '8')
 				{
 					putchar('\n');
 				}
