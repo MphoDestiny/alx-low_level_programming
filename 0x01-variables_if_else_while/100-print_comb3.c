@@ -1,37 +1,38 @@
 #include <stdio.h>
 
 /**
- * main - main function
+ * main - function to print combination of two numbers
  *
  * Return: alawys 0 (success)
  */
+
 int main(void)
 {
-	int num1 = 0, num2 = 1, num1max = 98, num2 = 99;
+	int i = '0';
+	int j = '0';
 
-	while (num1 <= num1max)
+	while (i <= '9')
 	{
-		num2 num1 = 1;
-		while (num2 <= num2max)
+		while (j <= '9')
 		{
-			putchar (num1 < 9 ? 0 + '0' : (num1 / 10) + '0');
-			putchar (num1 < 9 ? num1 + '0' : (num1 % 10) + '0');
-			putchar (' ');
-			putchar (num2 < 9 ? 0 + '0' : (num2 / 10) + '0');
-			putchar (num2 < 9 ? num2 + '0' : (num2 % 10) + '0');
-
-			if (num1 != num1max)
+			if (!(i > j) || i == j)
 			{
-				putchar (',');
-				putchar (' ');
+				putchar(i);
+				putchar(j);
+				if (i == '8' && j == '9')
+				{
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			num2++;
+			j++;
 		}
-		num1++;
+		j = '0';
+		i++;
 	}
-	putchar ('\n');
-
 	return (0);
 }
-
-
