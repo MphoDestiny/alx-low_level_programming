@@ -1,29 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - function to print combination of two numbers
+ * main - function to print combination of two number
  *
- * Return: alawys 0 (succes)
+ * Return: always 0 (success)
  */
-void printCombinations(void)
+int i = '0';
 {
-	int i, j;
-	for (i = 0 ; i < 9 ; i++)
-	{
-		for (j = i + 1; j < 10 ; j++)
-		{
-			putchar ('0' + i);
-			putchar ('0' + j);
-			if (i != 8 || j != 9)
-			{
-				putchar (',');
-				putchar (' ');
-			}
-		}
-	}
-}
-int main(void)
-{
-	printCombinations();
-	return (0);
+        int j = '1';
+
+        while (i <= '8')
+        {
+                while (j <= '9')
+                {
+                        if (!(i > j) || i == j)
+                        {
+                                putchar(i);
+                                putchar(j);
+                                if (i == '8' && j == '9')
+                                {
+                                        putchar('\n');
+                                }
+                                else
+                                {
+                                        putchar(',');
+                                        putchar(' ');
+                                }
+                        }
+                        j++;
+                }
+                j = '1';
+                i++;
+        }
+        return (0);
 }
