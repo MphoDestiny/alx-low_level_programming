@@ -7,7 +7,7 @@
  *
  * Return: the last digit of @num
  */
-int print last_digit(int num)
+int print_last_digit(int num)
 {
 	int last_digit =  num % 10;
 
