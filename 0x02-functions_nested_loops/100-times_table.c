@@ -5,7 +5,7 @@
  *
  * Return: Number matrix
  */
-void print_times_table (int n)
+void print_times_table(int n)
 {
 	int x, y, z;
 
@@ -20,7 +20,7 @@ void print_times_table (int n)
 				{
 					_putchar (',');
 					_putchar (32);
-					_putchar ((z / 100 ) + '0');
+					_putchar ((z / 100) + '0');
 					_putchar (((z / 10) % 10) + '0');
 					_putchar ((z % 10) + '0');
 				}
@@ -29,10 +29,10 @@ void print_times_table (int n)
 					_putchar (',');
 					_putchar (32);
 					_putchar (32);
-					_putchar (((z / 10) % 10 ) + '0');
+					_putchar (((z / 10) % 10) + '0');
 					_putchar ((z % 10) + '0');
 				}
-				else 
+				else
 				{
 					if (y != 0)
 					{
