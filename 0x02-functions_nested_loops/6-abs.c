@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * _abs - computes the absolute value of an interger
+ *
+ * @a: number whose absolute value is to be found
+ *
+ * Return: Absolute value of the number
+ */
+int _abs(int)
+{
+	if (a < 0)
+		a *= -1;
+	return (a);
+}
