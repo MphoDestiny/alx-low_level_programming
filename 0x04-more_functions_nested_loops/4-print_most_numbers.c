@@ -5,7 +5,7 @@
  *
  * Return: 0-9 except 2 and 4
  */
-print_void_number(void)
+void print_void_number(void)
 {
 	int i;
 
