@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * largets_number - returns the largest of 3 numbers
+ * largest_number - returns the largest of 3 numbers
  * @a: first interger
  * @b: second interger
  * @c: third interger
