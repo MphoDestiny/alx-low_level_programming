@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_number - print
+ * print_integer - print
  * @n: integer
  * Return: always
  */
-void print_number(int n)
+void print_integer(int n)
 {
 
 	unsigned int num = n;
