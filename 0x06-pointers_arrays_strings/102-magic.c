@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - add one line to code
+ *
+ * Return: 0
+ */
+
 int main(void)
 {
 	int n;
