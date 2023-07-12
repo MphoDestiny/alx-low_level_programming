@@ -8,7 +8,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main((argc,) char *argv[])
+int main(argc) ; char *(argv[]) 
 {
 	int i;
 
