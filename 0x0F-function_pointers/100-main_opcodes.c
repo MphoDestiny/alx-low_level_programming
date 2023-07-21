@@ -1,32 +1,47 @@
-#include "3-calc.h"
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * get_op_func - ...
- * @s: ...
+ * main - Prints the opcodes of itself.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * Return: ...
+ * Return: Always 0.
  */
-int (*get_op_func(char *s))(int, int)
+int main(int argc, char *argv[])
 {
-	op_t ops[] = {
-		{ "+", op_add },
-		{ "-", op_sub },
-		{ "*", op_mul },
-		{ "/", op_div },
-		{ "%", op_mod },
-		{ NULL, NULL }
-	};
-	int i = 0;
+	int bytes, index;
+	int (*address)(int, char **) = main;
+	unsigned char opcode;
 
-	while (i < 5)
+	if (argc != 2)
 	{
-		if (strcmp(s, ops[i].op) == 0)
-			return (ops[i].f);
-
-		i++;
+		printf("Error\n");
+		exit(1);
 	}
+
+	bytes = atoi(argv[1]);
+
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	for (index = 0; index < bytes; index++)
+	{
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
+
+		if (index == bytes - 1)
+			continue;
+		printf(" ");
+
+		address++;
+	}
+
+	printf("\n");
 
 	return (0);
 }
+
